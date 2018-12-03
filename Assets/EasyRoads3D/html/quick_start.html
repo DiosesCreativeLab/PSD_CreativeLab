@@ -40,7 +40,7 @@
 <p><a href="http://www.unityterraintools.com/tutorials.php" class="link">http://www.unityterraintools.com/tutorials.php</a></p>
 <p>&nbsp;</p>
 <p class="header2">DEMO PROJECT [Pro]</p>
-<p>After going through this quick Getting Started section it is recommended to download the free <a href="https://assetstore.unity.com/packages/tools/terrain/easyroads3d-demo-project-105045" class="link">demo project</a> from the Unity Asset Store. It includes examples of the various features with tutorials available <a href="http://www.unityterraintools.com/tutorials.php" class="link">here</a>. This demo project also includes several road types, materials and a range of different side objects. These assets can be used in your own projects.</p>
+<p>After going through this quick Getting Started section it is recommended to download the free <a href="https://assetstore.unity.com/packages/tools/terrain/easyroads3d-demo-project-105045" class="link">demo project.</a> It includes examples of the various features with tutorials available <a href="http://www.unityterraintools.com/tutorials.php" class="link">here</a>. This demo project also includes several road types, materials and a range of different side objects. You are free to use these assets in your own projects.</p>
 	      <p>&nbsp;</p>
 	      <p class="header2">IMPORT PACKAGE</p>
 	      <p class="style1">Let's first import the EasyRoads3D v3 package. This package includes tool only with one road type and 2 crossings. You can create road types and crossings using your own materials.	      </p>
@@ -63,29 +63,19 @@
 	      <p class="style1">&nbsp;</p>
 	      <p class="style1"><span class="header2">Creating a Crossing [Pro]</span></p>
 	      <p class="style1">Next we will create some crossings.	      </p>
-	      <p class="style1">Crossing prefabs can be placed directly in the scene or attached to the selected road. </p>
-	      <p class="style1">1) In the Inspector select the third tab from the left <img src="../images/prefabs_tab.jpg" width="53" height="29" style="vertical-align:middle"> from the  EasyRoads3D Toolbar. When a road is selected only matching crossing/connection prefabs will be displayed. Otherwise all prefabs will be displayed. In this example will add a new crossing to the scene so please make sure to deselect the road first by clicking outside the road on the terrain.</p>
+	      <p class="style1">You can place crossing prefabs directly in the scene. </p>
+	      <p class="style1">1) In the Inspector select the third tab from the left <img src="../images/prefabs_tab.jpg" width="53" height="29" style="vertical-align:middle"> from the  EasyRoads3D Toolbar. </p>
 	      <p class="style1">2) Select the prefab you want to add to the scene</p>
 	      <p class="style1">3) Hold SHIFT and click in the scene where you want to position it. The crossing will be instantiated.</p>
 	      <p class="style1">As long as no other action was done, like selecting a road or moving the crossing, multiple crossings of the same type can be added by repeating step 3).</p>
 	      <p class="style1">4) You will see green handles in the center of each crossing connection. Roads can be pulled out of the connections by moving the mouse to one of the green handles, hold the left mouse button down and drag. </p>
 	      <p class="style1">5) Roads can be  created instantly between crossings this way. Hold the left mouse button down and drag to the other crossing connection. The road will snap to the other crossing.</p>
-	      <p class="style1">6) Existing roads in the scene can be connected the same way provided that the shape matches the connections shape. The connection handle will turn red if this is not the case. Select the first / last marker of the road and move it to one of the green connection handles, it will snap to the connection. </p>
-	      <p class="style1">7) As mentioned above, when a marker is selected, the connections tab will display matching crossing /connection prefabs. Pressing the prefab will attach it to the starrt or end of the road or insert it between road sections. This will result in the road being split in two roads sections.</p>
-	      <p class="style1">8) Crossing / connection prefabs can also be insertet by moving a marker over another road segment. When a matching prefab exist the snap position will be highlighted in blue. Releasing the mouse button will insert the prefab with the closes match based on the involved road types.</p>
-	      <p class="style1">9) You can move  crossings by clicking on the yellow sphere handle in the center. Just like with markers you can move the crossing with the traditional position handle (W key) or the rectangle move handle (M key). Additionally you can also rotate the crossing, click the E key to activate the rotation handle.	      </p>
-	      <p class="style1">10) Alternatively,
+	      <p class="style1">6) Existing roads in te scene can be connected the same way. Select the first / last marker of the road and move it to one of the green connection handles, it will snap to the connection. </p>
+	      <p class="style1">7) You can move  crossings by clicking on the yellow sphere handle in the center. Just like with markers you can move the crossing with the traditional position handle (W key) or the rectangle move handle (M key). Additionally you can also rotate the crossing, click the E key to activate the rotation handle.	      </p>
+	      <p class="style1">8) Alternatively,
 	      Intersections can also be added to the start or end of the road. Select the first or last marker of the road you  created earlier. A list of available crossing prefabs will be displayed in the Inspector. Click the prefab   you want to attach to the selected marker. It will automatically attach to the selected marker.</p>
 	      <p class="style1">- <a href="intersections.html" class="link">Click here</a> for additional crossing prefab options in the scene<br>
 - <a href="general_settings.html#sceneprefabs" class="link">Click here</a> for more information about setting up crossing prefab types</p>
-	      <p class="style1">&nbsp;</p>
-	      <p class="header2">Side Objects</p>
-	      <p class="style1">Side objects are set up in the Side Object Manager <img src="../images/so_tab.jpg" width="53" height="29" style="vertical-align:middle"> . The additional demo package includes a wide range of examples which are ready to use. The setup can be examinded in the Side Object Manager.</p>
-	      <p class="style1">Side Objects can be activated for a road in the main <strong>Side Objects</strong> section just below the main <strong>Road Settings</strong>. Side objects can also be activated for specific road types in General Settings &gt; Road Types. These side objects will be auto activated for new instances of that road type.</p>
-	      <p class="style1">Whether a side object is instantly build depends on  &quot;Default active state for each marker&quot; in the Side Object Manager. Some side objects are generally active on all markers (for example lampposts) whereas other side objects will only be active on a selection of markers (for example bridges or guard rails). In this case it is more efficient to initialy not build the side object along the full track. &quot;Default active state for each marker&quot; can be used to control this.
-	      </p>
-	      <p class="style1">Side objects can be activated / deactivated per marker in the <strong>Marker Side Object Settings</strong> section just below the general marker controls. The start / end position (offsets) can also be fine tuned here. The H key toggles on/off Scene View handles to fine tune these offset values. Zoom in closer to the selected marker if these handles are not visible.</p>
-	      <p class="style1">- <a href="side_objects.html" class="link">Click here</a> for more info about  Side Objects</p>
 	      <p class="header2">&nbsp;</p>
 	      <p class="header2">Conforming the Terrain</p>
 	      <p class="style1">Next we will flatten the terrain to match the road shapes. Click the middle Mountain tab <img src="../images/terrain_tab.jpg" width="53" height="29" style="vertical-align:middle">  from the main EasyRoads3D Toolbar in the Inspector. You will see a couple of options to customize the final build. Click the <strong>Build Terrain(s)</strong> button to start the  process. Click the<strong> Restore Terrain</strong> button  to switch back to Edit Mode.</p>

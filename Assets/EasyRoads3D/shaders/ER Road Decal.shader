@@ -83,8 +83,8 @@ Shader "EasyRoads3D/ER Road Decal" {
             o.Normal = UnpackNormal(nrm);
             o.Albedo = _main.rgb;
             o.Alpha = alpha;
-            o.Smoothness = _met.a;//_Glossiness;
-            o.Metallic = _met.r;//_Metallic;
+            o.Smoothness = 0.5;//_met.a;//_Glossiness; 0.5
+            o.Metallic = 0;//_met.r;//_Metallic; 0
         }
         ENDCG
     }

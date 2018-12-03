@@ -20,10 +20,6 @@ Shader "EasyRoads3D/ER Single Road Blend" {
 
         _Cutoff ("Alpha Cutoff", Range(0,1)) = 0.5
         _Threshold ("Blend Threshold", Range(0.001,1)) = 1
-
-        [Header(Terrain Z Fighting Offset)]
-		_OffsetFactor ("Offset Factor", Range(0.0,-10.0)) = -1
-        _OffsetUnit ("Offset Unit", Range(0.0,-10.0)) = -1
     }
 
     SubShader {
@@ -32,8 +28,6 @@ Shader "EasyRoads3D/ER Single Road Blend" {
             "Queue" = "AlphaTest"
             "RenderType" = "TransparentCutout"
         }
-        LOD 200
-		Offset [_OffsetFactor],[_OffsetUnit]
 
         CGPROGRAM
         #pragma surface surf Standard  fullforwardshadows alphatest:_Cutoff

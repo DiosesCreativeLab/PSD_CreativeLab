@@ -42,21 +42,19 @@
   <li><span class="propertyStyle">Road Width:</span> The width of the road</li>
   <li><span class="propertyStyle">Sub Segments <strong class="propertyStyle">[Pro]</strong>:</span> This can be used to subdivide the road mesh for more detail. Note that this is not supported yet on dynamic crossings.</li>
   <li><span class="propertyStyle">Resolution:</span> the geometry resolution in meters</li>
-  <li><strong class="propertyStyle">Angle Threshold [Pro]:</strong> This can be used to optimize the road geometry while still maintaining detail in bends. Try values around 5 and increase the road resolution to 10 or 20. The vertex / triangle count will drop significantly. In general it is not recommended to use a lower Angle Threshold than 4 or 5 unless you are after high definition.</li>
+  <li><strong class="propertyStyle">Angle Treshold [Pro]:</strong> This can be used to optimize the road geometry while still maintaining detail is bends. Try values around 5 and increase the road resolution to 10 or 20. The vertex / triangle count will drop significantly. In general it is not recommended to use a lower Angle Treshold than 4 or 5 unless you are after high definition.</li>
   <li><span class="propertyStyle">Road Smoothness <strong class="propertyStyle">[Pro]</strong>:</span> <br>
     <span class="propertyStyle">Bumpiness Y Offset:</span> The smoothness level of the road controllable through Min Max values<br>
     <span class="propertyStyle">Bumpiness Distance:</span> The distance controlable through Min Max values<br>
     <span class="propertyStyle">Random Tilting Angles:</span> Adds additional tilting to the road controllable through Min Max values<br>
     <span class="propertyStyle">Tilting Distance:</span> The distance over which the tilting takes place. </li>
   <li><span class="propertyStyle">Follow terrain Contours <strong class="propertyStyle">[Pro]</strong>:</span> The road will auto adjust to the terrain shape, this will greatly speed up the workflow as less markers will be required</li>
-  <li><span class="propertyStyle">Contour Treshold <strong class="propertyStyle">[Pro]</strong>:</span> The accuracy. Use lower values to exactly match the terrain shape, use higher values for roads like motorways.</li>
+  <li><span class="propertyStyle">Contour Treshold <strong class="propertyStyle">[Pro]</strong>:</span> The accuracy. Use lower values to exactly match the terrain shape, use higher vaklues for roads like motorways.</li>
   <li><span class="propertyStyle">Road Material:</span> the material assigned to this road. The dropdown lists all materials in /EasyRoads3D/Resources/Materials/Roads and can be used to quickly assign another material. It is recommend though to work with road types and apply the material changes to the road type.</li>
   <li><span class="propertyStyle">UV Tiling:</span> This controls the tile size of the used road texture.</li>
-  <li><span class="propertyStyle">Additional UV data: </span>Additionally uv data matching the terrain boundingbox or uv data tiled on a specified distance can be generated in UV channel 4.</li>
-  <li><span class="propertyStyle">Flip Road Texture / UVs: </span>This will swap the uv coordinates of the road. By default texturing of opposite roads on a connection will match regardless how they are connected to the crossing. If you do not want that for specific roads, you can change that by flipping the road texture of a road. This option can also be useful for roads connected to custom connectors when the UVs look wrong or flipped.</li>
+  <li><span class="propertyStyle">Additional UV data: </span>Additionally uv data matching the terrain boundingbox or uv data tiled ona specified distance can be generated in UV channel 4.</li>
+  <li><span class="propertyStyle">Flip Road Texture: </span>This will swap the uv coordinates of the road. By default texturing of opposite roads on a connection will match regardless how they are connected to the crossing. If you do not want that for specific roads, you can change that by flipping the road texture of a road. This option can also be useful for roads connected to custom connectors when the UVs look wrong or flipped.</li>
   <li><span class="propertyStyle">Flip Normals:</span> This can be useful for tracks generated through the custom prefab system. Soemtimes you want thw normals to point to the other direction like for tunnel / cave type of shapes.</li>
-  <li><span class="propertyStyle"><a name="startEndDecals"></a>Start Decal: </span>The currently selected Decal at the start, this can be updated manually by selecting another deval from the dropdown. Decals can be used as a transition between road types at crossings or to add variation, cracks, road fixes. Decal prefabs can be added per road type in <a href="general_settings.html#startEndDecals" class="link">General Settings &gt; Road Types</a>.</li>
-  <li><span class="propertyStyle">End Decal:</span> The currently selected Decal at the start, this can be updated manually by selecting another deval from the dropdown. Decals can be used as a transition between road types at crossings or to add variation, cracks, road fixes. Decal prefabs can be added per road type in <a href="general_settings.html#startEndDecals" class="link">General Settings &gt; Road Types</a>.</li>
   <li><span class="propertyStyle">Closed Track:</span> This will loop the road, ideal for generating race tracks</li>
   <li><span class="propertyStyle">Terrain Deformation: </span>This can be used to turn off terrain deformation for this particular road, for instance roads used as bridge segments.</li>
   <li><span class="propertyStyle">Cast Shadows</span>: Toggle this on when the object should cast shadows.</li>
@@ -71,8 +69,7 @@
 </p>
 <p class="style1"><strong>Side Objects Status</strong><span class="header2"><a name="sideObjects" id="addmarkers12"></a></span></p>
 <p class="style1">This will list all available side objects in the scene. You can select which side objects to activate for this road object.</p>
-<p class="style1">The foldout will show additional controls to adjust the <a href="side_objects.html#">default settings</a> of this particular instance of the side object. </p>
-<p class="style1">The X Position relative to the default position with options for randomness. The same for the Y position and random rotation angles.<br>
+<p class="style1"><br>
 </p>
 <p class="style1"><strong>Marker Properties</strong><span class="header2"><a name="markerProperties" id="addmarkers6"></a></span></p>
 <ul>
@@ -143,14 +140,11 @@
 <p class="style1">Alternatively you can add crossing objects directly to the scene, especially roundabout objects, by clicking the connection prefab tab <img src="../images/prefabs_tab.jpg" width="53" height="29" style="vertical-align:middle">. You will see the same list of available crossing / connection prefabs. Select the object you want to instantiate in the scene, hold the SHIFT key and click in the scene where you want to position the object. You can repeat SHIFT + click if you want to instantiate the same object multiple times.</p>
 <p class="style1">&nbsp;</p>
 <p class="style21"><span class="header2">CONNECTION CONTROLS [Pro]<a name="connectionProperties" id="addmarkers4"></a></span></p>
-<p class="style21"><img src="../images/connectionproperties.jpg" width="449" height="358"></p>
+<p class="style21"><img src="../images/connectionproperties.jpg" width="435" height="319"></p>
 <p class="style1">After Instantiating a connection in the scene or selecting an existing connection in the scene the Inspector will display connection properties and controls</p>
 <ul>
   <li><STRONG class="propertyStyle">Position:</STRONG> The position of the connection</li>
   <li><span class="propertyStyle">Rotation:</span> The rotation of the connection</li>
-  <li><span class="propertyStyle">Rotate Connection:</span> Depending on the connected roads, this button will rotate the prefab and swap connections</li>
-  <li><span class="propertyStyle">T-Crossing:</span> This is active on dynamic X, T crossings and will build the prefab according this status</li>
-  <li><span class="propertyStyle">Sidewalks:</span> This is active on dynamic connection prefabs and will set the global sidewalk status</li>
   <li><span class="propertyStyle">Delete Connection:</span> This will remove the connection from the scene</li>
   <li><span class="propertyStyle">Select Connection in Hierarchy:</span> This will select the actual rotation game object. For dynamic crossings <a href="general_settings.html#generalCrossingSettings" class="link">the connection properties</a> will be displayed. </li>
 </ul>

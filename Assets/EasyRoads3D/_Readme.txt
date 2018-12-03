@@ -1,35 +1,37 @@
 
-Thank you for purchasing EasyRoads3D Pro
+EasyRoads3D Pro Demo Project
 
-This package includes the EasyRoads3D Pro tool and a simple demo scene.
+This package is complimentary to the EasyRoads3D Pro package
+It includes additional side objects and road types which you can use in your own projects.
+The demo scene includes featured areas highlighted with red lights including links in the Inspector to tutorials, http://www.unityterraintools.com/tutorials.php
+These tutorials cover the more advanced features of the EasyRoads3D package.
 
-It is recommended to spend some time getting familiar with the tool before starting to use it in your projects. 
+Note: The demo scene opens with the road network in Build mode. In this state the toolbar tabs in the Inspector are locked. Press the "Back To Edit Mode" button in the Inspector to view the setup of the various roads, road types and side objects.
 
-The manual is located in the EasyRoads3D root director. The first pages of the manual explain the main work flow.
-
-To get familiar with the tool you can also download the free demo project: https://assetstore.unity.com/packages/tools/terrain/easyroads3d-demo-project-105045
-
-The demo package includes many assets. It is recommended to import in a new project first. It can be imported in your project 
-if you want to use all assets. Otherwise assets can be exported / imported. 
-
-It includes featured zones with links to tutorials on our website, http://unityterraintools.com/tutorials.php. 
-
-The demo project also includes a variety of different road types and side objects
-which can be used in your own personal and commercial projects except for asset store packages. 
-Please contact us for permission to use these assets in Unity asset store packages or for example open source Unity projects.   
-
-The legacy provisional beta demo project is part of the demo project as a separate Unity package.
+Also note that the scene itself is intended for learning purposes to get familiar with the tool. It is not optimized and does include various 
+more complex objects targeting high-end machines. The scene is not optimized.
 
 
-ADDITIONAL NOTE:
+Important:
 
-After the package import you may see "GetBool" and "Broken text PPtr in file" errors in the console. 
-This is mentioned on the Known Isssues page of the manual. This has been discussed with the Unity devs.
-It is related to prefab file IDs that have become invalid.
-When creating your road network or when selecting the road network object in the hierarchy, 
-the system will do a scan and perform steps to repair these file IDs.
-  
+Side object and road type data might change in future updates. 
+Please keep that in mind when importing updates when you use this package in your developement project.
+It may override changes you made to specific settings.
+It is recommended to import this package in a new project and export / import those assets you like to use in your own projects.
 
+
+Copyright notice:
+
+All assets in this project can be used in your commercial projects except for Unity asset store packages and similar. Please contact us for permission to use assets in this project in Unity asset store
+or similar packages.
+
+
+Legacy Beta Demo Package
+
+/EasyRoads3D/Legacy_Beta_Demo_Scene_Package.unityPackage
+
+This is the beta demo project with older example assets and the road network example using the default X crossing and T crossing with sidewalks, using the 
+built-in dynamic crossing system. 
 
 Forum: http://forum.unity3d.com/threads/easyroads3d-v3-the-upcoming-new-road-system.229327/
 Website: http://www.unityterraintools.com
