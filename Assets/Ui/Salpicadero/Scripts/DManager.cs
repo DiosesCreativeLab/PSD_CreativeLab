@@ -1,11 +1,13 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
 
+
 public class DManager : MonoBehaviour
 {
-    public GameObject[] Signals;
+    public Texture2D[] Signals; //pick all kind of signals
     [Space]
     public RectTransform prefap;
     public Text countText;
@@ -13,7 +15,12 @@ public class DManager : MonoBehaviour
 
     public RectTransform content;
 
-	void Start () {
+    
+    List<Itmview> views = new List<Itmview>();
+
+
+
+    void Start () {
 		
 	}
 	
@@ -30,15 +37,28 @@ public class DManager : MonoBehaviour
         foreach (Transform child in content)
             Destroy(child.gameObject);
 
+        views.Clear();
+
+        int i = 0;
         foreach (var prefapp in prefaps)
         {
             var instance = GameObject.Instantiate(prefap.gameObject) as GameObject;
             instance.transform.SetParent(content, false);
+
+           var view = InitializeItmView(instance, prefapp);
+            views.Add(view);
+            ++i;
         }
     }
 
-    void InitializeItmView()
+    Itmview InitializeItmView(GameObject VgameObject, Signal model)
     {
+        Itmview view = new Itmview(VgameObject.transform);
+
+        view.title.text = model.name;
+        view.Signal.texture = Signals[model.typesignal];
+
+        return view;
 
     }
 
@@ -63,16 +83,29 @@ public class DManager : MonoBehaviour
     public class Signal
     {
         public string name;
-        public int typesignal = 0; // 0= stoped
+        public int typesignal; // 0= stoped
     }
     public class Itmview
     {
+
         public Text title;
-        public Image Signal;
+        public RawImage Signal;
+
+        public Signal Model
+        {
+            set
+            {
+                if (value != null)
+                    title.text = value.name;
+            }
+        }
+
         public Itmview(Transform rootV)
         {
-
+            title = rootV.Find("DirectionPrefap/FAP_text").GetComponent<Text>();
+            Signal = rootV.Find("DirectionPrefap/FAP_img_Back").GetComponent<RawImage>();
         }
+     
     }
 
 
