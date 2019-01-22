@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
 
 
-public class DManager: MonoBehaviour
+public class DManager : MonoBehaviour
 {
     public Texture2D[] Signals; //pick all kind of signals
     [Space]
@@ -14,12 +15,13 @@ public class DManager: MonoBehaviour
     public ScrollRect scrowview;
 
     public RectTransform content;
+
     
     List<Itmview> views = new List<Itmview>();
-    
 
-    void Start ()
-    {
+
+
+    void Start () {
 		
 	}
 	
