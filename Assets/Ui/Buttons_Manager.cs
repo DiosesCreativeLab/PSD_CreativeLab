@@ -21,20 +21,19 @@ public class Buttons_Manager : MonoBehaviour {
 
     public void changeAlpha(GameObject image)
     {
-        float transparency = 0.5f; // (float)128 / (float)256;
+    
 
-        if (true/*mathf.Round(image.GetComponent<Image>().color.a) == 0.5f*/)
+        if (image.GetComponent<Image>().color.a <= 0.6f)
         {
-  
+            Debug.Log("da" + image.GetComponent<Image>().color.a);
+          
 
-            image.GetComponent<Image>().color = new Color32(233, 131, 131, 255);
+            image.GetComponent<Image>().color = new Color32((byte)(image.GetComponent<Image>().color.r*256), (byte)(image.GetComponent<Image>().color.g * 256), (byte)(image.GetComponent<Image>().color.b * 256), 255);
      
         }
         else
         {
-            image.GetComponent<Image>().color = new Color32(233, 131, 131, 128);
-            //cb.a = transparency;
-            //cb2.a = transparency;
+            image.GetComponent<Image>().color = new Color32((byte)(image.GetComponent<Image>().color.r * 256), (byte)(image.GetComponent<Image>().color.g * 256), (byte)(image.GetComponent<Image>().color.b * 256), 128);
         }
     }
 
