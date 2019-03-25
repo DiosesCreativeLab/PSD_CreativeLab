@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 165f23bd81ec4aa419e1af4433bead78
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Component_21
+    100002: Component_21 1
+    100004: Component_21 2
+    100006: Component_21 3
+    100008: Component_21 4
+    100010: Component_21 5
+    100012: Component_21 6
+    100014: Component_22
+    100016: Component_22 1
+    100018: Component_22 10
+    100020: Component_22 11
+    100022: Component_22 12
+    100024: Component_22 13
+    100026: Component_22 2
+    100028: Component_22 3
+    100030: Component_22 4
+    100032: Component_22 5
+    100034: Component_22 6
+    100036: Component_22 7
+    100038: Component_22 8
+    100040: Component_22 9
+    100042: Component_23
+    100044: Component_24
+    100046: Component_24 1
+    100048: ID123
+    100050: ID131
+    100052: ID139
+    100054: ID18
+    100056: ID18 1
+    100058: ID36
+    100060: ID36 1
+    100062: ID55
+    100064: ID63
+    100066: instance_0
+    100068: instance_1
+    100070: instance_10
+    100072: instance_11
+    100074: instance_12
+    100076: instance_13
+    100078: instance_14
+    100080: instance_15
+    100082: instance_16
+    100084: instance_17
+    100086: instance_18
+    100088: instance_19
+    100090: instance_2
+    100092: instance_20
+    100094: instance_21
+    100096: instance_22
+    100098: instance_23
+    100100: instance_3
+    100102: instance_4
+    100104: instance_5
+    100106: instance_6
+    100108: instance_7
+    100110: instance_8
+    100112: instance_9
+    100114: //RootNode
+    100116: skp_camera_Last_Saved_SketchUp_View
+    400000: Component_21
+    400002: Component_21 1
+    400004: Component_21 2
+    400006: Component_21 3
+    400008: Component_21 4
+    400010: Component_21 5
+    400012: Component_21 6
+    400014: Component_22
+    400016: Component_22 1
+    400018: Component_22 10
+    400020: Component_22 11
+    400022: Component_22 12
+    400024: Component_22 13
+    400026: Component_22 2
+    400028: Component_22 3
+    400030: Component_22 4
+    400032: Component_22 5
+    400034: Component_22 6
+    400036: Component_22 7
+    400038: Component_22 8
+    400040: Component_22 9
+    400042: Component_23
+    400044: Component_24
+    400046: Component_24 1
+    400048: ID123
+    400050: ID131
+    400052: ID139
+    400054: ID18
+    400056: ID18 1
+    400058: ID36
+    400060: ID36 1
+    400062: ID55
+    400064: ID63
+    400066: instance_0
+    400068: instance_1
+    400070: instance_10
+    400072: instance_11
+    400074: instance_12
+    400076: instance_13
+    400078: instance_14
+    400080: instance_15
+    400082: instance_16
+    400084: instance_17
+    400086: instance_18
+    400088: instance_19
+    400090: instance_2
+    400092: instance_20
+    400094: instance_21
+    400096: instance_22
+    400098: instance_23
+    400100: instance_3
+    400102: instance_4
+    400104: instance_5
+    400106: instance_6
+    400108: instance_7
+    400110: instance_8
+    400112: instance_9
+    400114: //RootNode
+    400116: skp_camera_Last_Saved_SketchUp_View
+    2000000: skp_camera_Last_Saved_SketchUp_View
+    2100000: Concrete_Gray
+    2100002: Metal_Corrogated_Shiny
+    2100004: roof11L256noCulling
+    2100006: corporate3
+    2100008: Metal_Corrogated_Shiny_0
+    2300000: Component_21
+    2300002: Component_21 1
+    2300004: Component_21 2
+    2300006: Component_21 3
+    2300008: Component_21 4
+    2300010: Component_21 5
+    2300012: Component_21 6
+    2300014: Component_22
+    2300016: Component_22 1
+    2300018: Component_22 10
+    2300020: Component_22 11
+    2300022: Component_22 12
+    2300024: Component_22 13
+    2300026: Component_22 2
+    2300028: Component_22 3
+    2300030: Component_22 4
+    2300032: Component_22 5
+    2300034: Component_22 6
+    2300036: Component_22 7
+    2300038: Component_22 8
+    2300040: Component_22 9
+    2300042: Component_23
+    2300044: Component_24
+    2300046: Component_24 1
+    2300048: ID123
+    2300050: ID131
+    2300052: ID139
+    2300054: ID18
+    2300056: ID18 1
+    2300058: ID36
+    2300060: ID36 1
+    2300062: ID55
+    2300064: ID63
+    2300066: //RootNode
+    3300000: Component_21
+    3300002: Component_21 1
+    3300004: Component_21 2
+    3300006: Component_21 3
+    3300008: Component_21 4
+    3300010: Component_21 5
+    3300012: Component_21 6
+    3300014: Component_22
+    3300016: Component_22 1
+    3300018: Component_22 10
+    3300020: Component_22 11
+    3300022: Component_22 12
+    3300024: Component_22 13
+    3300026: Component_22 2
+    3300028: Component_22 3
+    3300030: Component_22 4
+    3300032: Component_22 5
+    3300034: Component_22 6
+    3300036: Component_22 7
+    3300038: Component_22 8
+    3300040: Component_22 9
+    3300042: Component_23
+    3300044: Component_24
+    3300046: Component_24 1
+    3300048: ID123
+    3300050: ID131
+    3300052: ID139
+    3300054: ID18
+    3300056: ID18 1
+    3300058: ID36
+    3300060: ID36 1
+    3300062: ID55
+    3300064: ID63
+    3300066: //RootNode
+    4300000: SketchUp
+    4300002: ID123
+    4300004: ID131
+    4300006: ID139
+    4300008: Component_24
+    4300010: ID18
+    4300012: ID36
+    4300014: Component_23
+    4300016: ID55
+    4300018: ID63
+    4300020: Component_22
+    4300022: Component_21
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
