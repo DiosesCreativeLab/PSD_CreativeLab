@@ -8,9 +8,22 @@ public class Selector : MonoBehaviour {
     GameObject[] noselectedList;
 
 
-    public void SetAnimint(int integ)
+    public void SetAnimint_Peaje(int integ)
     {
-        animator.SetInteger("Anim_Int_Controller", integ);
+        animator.SetInteger("Peaje_Select", integ);
+    }
+    public void SetAnimint_Restaurant(int integ)
+    {
+        animator.SetInteger("Restaurant_Select", integ);
+    }
+    public void SetAnimint_Niebla(int integ)
+    {
+        animator.SetInteger("Niebla_Select", integ);
+    }
+
+    public void SetAnimint_Parking(int integ)
+    {
+        animator.SetInteger("Parking_Select", integ);
     }
 
     //public void SelecttButton(GameObject selecteed)
