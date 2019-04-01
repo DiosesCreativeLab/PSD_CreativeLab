@@ -66,10 +66,10 @@ MonoBehaviour:
     - 0
     - 0
     blendCornerPointsTransformed:
-    - {x: 323.80127, y: 675.1987, z: 0}
-    - {x: 323.80127, y: 675.1987, z: 0}
-    - {x: 668.1987, y: 675.1987, z: 0}
-    - {x: 668.1987, y: 675.1987, z: 0}
+    - {x: 111.01294, y: 657.98706, z: 0}
+    - {x: 111.01294, y: 657.98706, z: 0}
+    - {x: 657.98706, y: 657.98706, z: 0}
+    - {x: 657.98706, y: 657.98706, z: 0}
     blendRatio: 1
     curveStrength: 0
     roadShapeVecs:
@@ -494,7 +494,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 756802e26790dbf459cc7d19e78e6b89, type: 2}
