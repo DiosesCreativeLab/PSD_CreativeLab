@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/UI_Salpicadero.unity
+    path: Assets/Scenes/none/UI_Salpicadero.unity
     guid: be98fc30a25d3c34e87723863db1925f
   m_configObjects: {}
