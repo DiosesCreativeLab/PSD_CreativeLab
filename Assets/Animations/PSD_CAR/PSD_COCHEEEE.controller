@@ -12,7 +12,7 @@ AnimatorController:
   - m_Name: Peaje_Select
     m_Type: 3
     m_DefaultFloat: 0
-    m_DefaultInt: 1
+    m_DefaultInt: 2
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Restaurant_Select
@@ -557,6 +557,28 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101834750036712794
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102507301946201262}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.97744364
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101913380596482144
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -947,7 +969,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2a7c5fa5df7478d47a48c37f04bee742, type: 2}
+  m_Motion: {fileID: 7400000, guid: 289bf012b2ee3e74fb43841e03d367ee, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1059,7 +1081,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 289bf012b2ee3e74fb43841e03d367ee, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2a7c5fa5df7478d47a48c37f04bee742, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1130,7 +1152,7 @@ AnimatorStateMachine:
     m_Position: {x: 132, y: 660, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102834317307764286}
-    m_Position: {x: 384, y: 660, z: 0}
+    m_Position: {x: 384, y: 672, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102108189733848990}
     m_Position: {x: 132, y: 828, z: 0}
@@ -1151,7 +1173,7 @@ AnimatorStateMachine:
     m_Position: {x: 252, y: 1236, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102507301946201262}
-    m_Position: {x: 624, y: 660, z: 0}
+    m_Position: {x: 612, y: 672, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
