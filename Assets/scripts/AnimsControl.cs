@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class AnimsControl : MonoBehaviour
 {
-
     public Animator[] anims;
-
 
     void OnTriggerEnter(Collider Other_col)
     {
@@ -27,6 +25,22 @@ public class AnimsControl : MonoBehaviour
             {
                 temp.SetBool("CanPlay", false);
             }
+        }
+    }
+
+    public void PlayAnims()
+    {
+        foreach (Animator temp in anims)
+        {
+            temp.SetBool("CanPlay", true);
+        }
+    }
+
+    public void StopAnims()
+    {
+        foreach (Animator temp in anims)
+        {
+            temp.SetBool("CanPlay", false);
         }
     }
 }
