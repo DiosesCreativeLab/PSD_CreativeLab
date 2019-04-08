@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class Variables_Controler : MonoBehaviour
 {
@@ -119,7 +119,7 @@ public class Variables_Controler : MonoBehaviour
             playersScore.SetValue(currentPlayer, num_current_Player - 1);
         }
 
-        EditorSceneManager.LoadScene(toWitchScene);
+        SceneManager.LoadScene(toWitchScene);
     }
 
 }
