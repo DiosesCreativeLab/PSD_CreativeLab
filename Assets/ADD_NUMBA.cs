@@ -5,14 +5,19 @@ using UnityEngine.UI;
 
 public class ADD_NUMBA : MonoBehaviour
 {
-    public Text tx;
-    public int num;
+    public Text[] tx;
+    public string[] num;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            tx.text = num.ToString();
+            int i = 0;
+            foreach( Text t in tx)
+            {
+                t.text = num[i];
+                i +=1;
+            }  
         }
     }
 }
