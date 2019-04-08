@@ -73,7 +73,7 @@ public class Variables_Controler : MonoBehaviour
     {
 
         currentPlayer.timee += Time.deltaTime;
-        txt.text = currentPlayer.timee.ToString();
+        txt.text = currentPlayer.timee.ToString("n2");
 
     }
     // -----------
