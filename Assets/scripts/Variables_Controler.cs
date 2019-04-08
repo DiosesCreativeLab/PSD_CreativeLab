@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class Variables_Controler : MonoBehaviour
 {
+
     enum select_Peaje {A,B,C,D, NaN};
     enum select_Restaurant { A, B, C, NaN };
     enum select_Niebla { A, B, NaN };
     enum select_Parking { A, B, D, NaN };
+
+    //static string PlayerName;
 
     public struct playerr
     {
@@ -21,6 +24,7 @@ public class Variables_Controler : MonoBehaviour
         select_Niebla s_Niebla;
         select_Parking s_Parking;
 
+        public string Player_Name;
 
         public void setpeaje(int p)
         {
@@ -52,7 +56,7 @@ public class Variables_Controler : MonoBehaviour
     public int caseNumber = 0;
 
     public Text txt;
-
+    public mainControl mcontrol;
 
     // -----------------------------------------------
     void Start()
@@ -60,6 +64,7 @@ public class Variables_Controler : MonoBehaviour
         if(num_current_Player==0)
         {
             playersScore = new playerr[50];
+
         }
 
         num_current_Player += 1;
@@ -67,6 +72,8 @@ public class Variables_Controler : MonoBehaviour
         caseNumber = 0;
 
         currentPlayer.timee = 0f;
+
+        currentPlayer.Player_Name = mcontrol.GetNamee();
     }
     // -----------
     void Update()

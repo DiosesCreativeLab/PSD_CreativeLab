@@ -10,4 +10,10 @@ public class changgee : MonoBehaviour
     {
         SceneManager.LoadScene(toWitchScene);
     }
+
+    public void QQuit()
+    {
+        Application.Quit();
+    }
+
 }
