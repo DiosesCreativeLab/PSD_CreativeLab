@@ -19,37 +19,14 @@ public class Variables_Controler : MonoBehaviour
     {
         public float timee;
         
-        select_Peaje s_Peaje;
-        select_Restaurant s_Restaurant;
-        select_Niebla s_Niebla;
-        select_Parking s_Parking;
+        public int s_Peaje;
+        public int s_Restaurant;
+        public int s_Niebla;
+        public int s_Parking;
 
         public string Player_Name;
 
-        public void setpeaje(int p)
-        {
-            s_Peaje = (select_Peaje)p;
-        }
-
-        public void setrest(int r)
-        {
-            s_Restaurant = (select_Restaurant)r;
-        }
-
-        public void setfog(int f)
-        {
-            s_Niebla = (select_Niebla)f;
-        }
-
-        public void setpark(int pa)
-        {
-            s_Parking = (select_Parking)pa;
-        }
-
     }
-
-    static playerr[] playersScore;
-
     public playerr currentPlayer;
 
     static int num_current_Player = 0;
@@ -59,15 +36,10 @@ public class Variables_Controler : MonoBehaviour
     public mainControl mcontrol;
 
     // -----------------------------------------------
+
     void Start()
     {
-        if(num_current_Player==0)
-        {
-            playersScore = new playerr[50];
-
-        }
-
-        num_current_Player += 1;
+        num_current_Player = PlayerPrefs.GetInt("cant_Jugadores", num_current_Player)+1;
 
         caseNumber = 0;
 
@@ -104,29 +76,66 @@ public class Variables_Controler : MonoBehaviour
 
     public void setPeaje(int toSet) //A,B,C,D
     {
-        currentPlayer.setpeaje(toSet);
+        currentPlayer.s_Peaje = toSet;
     }
     public void setRest(int toSet)//A,B,C
     {
-        currentPlayer.setrest(toSet);
+        currentPlayer.s_Restaurant = toSet;
     }
     public void setfog(int toSet)//A,B
     {
-        currentPlayer.setpeaje(toSet);
+        currentPlayer.s_Niebla = toSet;
     }
     public void setParking(int toSet)//A,B,C
     {
-        currentPlayer.setpark(toSet);
+        currentPlayer.s_Parking = toSet;
     }
 
     public void changeScene(int toWitchScene)
     {
-        if (num_current_Player < 50)
-        {
-            playersScore.SetValue(currentPlayer, num_current_Player - 1);
-        }
-
+        SAaave();
         SceneManager.LoadScene(toWitchScene);
     }
+
+    void SAaave()
+    {
+        PlayerPrefs.SetInt("cant_Jugadores", num_current_Player);
+    //    PlayerPrefs.SetString("Jugador_" + num_current_Player.ToString(), name);
+
+        PlayerPrefs.SetFloat("Jugador_" + num_current_Player.ToString() + "_Time", currentPlayer.timee);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", currentPlayer.s_Peaje);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", currentPlayer.s_Restaurant);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", currentPlayer.s_Niebla);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Parking", currentPlayer.s_Parking);
+
+    }
+    //void Looad()
+    //{
+    //    string temp_name = "000";
+    //    float temp_Time = -1;
+    //    int temp_Peaje =-1;
+    //    int temp_Restaurante = -1;
+    //    int temp_Niebla = -1;
+    //    int temp_Parking = -1;
+
+
+    //    PlayerPrefs.GetInt("cant_Jugadores", num_current_Player);
+     
+
+    //    for (int i =0; i< num_current_Player; i++)
+    //    {
+          
+    //        temp_Time = PlayerPrefs.GetFloat("Jugador_" + num_current_Player.ToString()+"_Time", num_current_Player);
+    //        temp_Peaje =  PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", num_current_Player);
+    //        temp_Restaurante=  PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", num_current_Player);
+    //        temp_Niebla = PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", num_current_Player);
+    //        temp_Parking = PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Parking", num_current_Player);
+    //        temp_name = PlayerPrefs.GetString("Jugador_" + num_current_Player.ToString(), namee);
+
+    //    }
+
+    //}
+
+
 
 }
