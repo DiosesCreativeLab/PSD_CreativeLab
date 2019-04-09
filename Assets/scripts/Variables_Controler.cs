@@ -32,8 +32,6 @@ public class Variables_Controler : MonoBehaviour
     static int num_current_Player = 0;
     public int caseNumber = 0;
 
-    public Text txt;
-    public mainControl mcontrol;
 
     // -----------------------------------------------
 
@@ -50,15 +48,7 @@ public class Variables_Controler : MonoBehaviour
     // -----------
     void Update()
     {
-
         currentPlayer.timee += Time.deltaTime;
-     //   txt.text = currentPlayer.timee.ToString("n2");
-
-    }
-    // -----------
-    void Finish()
-    {
-
     }
 
     // -----------------------------------------------
@@ -110,19 +100,19 @@ public class Variables_Controler : MonoBehaviour
 
         Debug.Log("Jugador_" + num_current_Player.ToString() + "_Peaje______");
         Debug.Log(currentPlayer.s_Peaje);
-        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", currentPlayer.s_Peaje);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", currentPlayer.s_Peaje + 1);
 
         Debug.Log("Jugador_" + num_current_Player.ToString() + "_Restaurante______");
         Debug.Log(currentPlayer.s_Restaurant);
-        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", currentPlayer.s_Restaurant);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", currentPlayer.s_Restaurant+1);
 
         Debug.Log("Jugador_" + num_current_Player.ToString() + "_Niebla______");
         Debug.Log(currentPlayer.s_Niebla);
-        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", currentPlayer.s_Niebla);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", currentPlayer.s_Niebla + 1);
 
         Debug.Log("Jugador_" + num_current_Player.ToString() + "_Parking______");
         Debug.Log(currentPlayer.s_Parking);
-        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Parking", currentPlayer.s_Parking);
+        PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Parking", currentPlayer.s_Parking + 1);
 
     }
 

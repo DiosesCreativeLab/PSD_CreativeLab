@@ -105,7 +105,7 @@ public class ScoreControl : MonoBehaviour
             temp_Peaje = PlayerPrefs.GetInt("Jugador_" + i + "_Peaje", -4);
             Debug.Log("_Peajeeeeeeeeeeeeeeee" + temp_Peaje);
 
-
+   
             temp_Restaurante = PlayerPrefs.GetInt("Jugador_" + i + "_Restaurante",-4);
             Debug.Log("_Restauranteeeeeeeeeeeeeeeeeeeee" + temp_Restaurante);
 
