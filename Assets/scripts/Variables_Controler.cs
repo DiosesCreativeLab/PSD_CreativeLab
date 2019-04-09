@@ -100,7 +100,7 @@ public class Variables_Controler : MonoBehaviour
     void SAaave()
     {
         PlayerPrefs.SetInt("cant_Jugadores", num_current_Player);
-    //    PlayerPrefs.SetString("Jugador_" + num_current_Player.ToString(), name);
+    //  PlayerPrefs.SetString("Jugador_" + num_current_Player.ToString(), name);
 
         PlayerPrefs.SetFloat("Jugador_" + num_current_Player.ToString() + "_Time", currentPlayer.timee);
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", currentPlayer.s_Peaje);
@@ -109,33 +109,6 @@ public class Variables_Controler : MonoBehaviour
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Parking", currentPlayer.s_Parking);
 
     }
-    //void Looad()
-    //{
-    //    string temp_name = "000";
-    //    float temp_Time = -1;
-    //    int temp_Peaje =-1;
-    //    int temp_Restaurante = -1;
-    //    int temp_Niebla = -1;
-    //    int temp_Parking = -1;
-
-
-    //    PlayerPrefs.GetInt("cant_Jugadores", num_current_Player);
-     
-
-    //    for (int i =0; i< num_current_Player; i++)
-    //    {
-          
-    //        temp_Time = PlayerPrefs.GetFloat("Jugador_" + num_current_Player.ToString()+"_Time", num_current_Player);
-    //        temp_Peaje =  PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", num_current_Player);
-    //        temp_Restaurante=  PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", num_current_Player);
-    //        temp_Niebla = PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", num_current_Player);
-    //        temp_Parking = PlayerPrefs.GetInt("Jugador_" + num_current_Player.ToString() + "_Parking", num_current_Player);
-    //        temp_name = PlayerPrefs.GetString("Jugador_" + num_current_Player.ToString(), namee);
-
-    //    }
-
-    //}
-
 
 
 }
