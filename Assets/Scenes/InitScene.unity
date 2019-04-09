@@ -872,7 +872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &639241179
 Transform:
   m_ObjectHideFlags: 0
@@ -1024,19 +1024,19 @@ MonoBehaviour:
   Worst_Name: {fileID: 1010956792}
   Worst_score: {fileID: 599678910}
   Worst_score_Recorrido: {fileID: 279518342}
-  _You_Name: unknown
+  _You_Name: TEST
   _You_score: 0
   _You_score_PEaje: 9
   _You_score_rest: 9
   _You_score_nieb: 9
   _You_score_Park: 9
-  _Best_Name: unknown
+  _Best_Name: TEST
   _Best_score: 5000
   _Best_score_PEaje: 9
   _Best_score_rest: 9
   _Best_score_nieb: 9
   _Best_score_Park: 9
-  _Worst_Name: unknown
+  _Worst_Name: TEST
   _Worst_score: 0
   _Worst_score_PEaje: 9
   _Worst_score_rest: 9
@@ -3370,7 +3370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1667560064
 RectTransform:
   m_ObjectHideFlags: 0

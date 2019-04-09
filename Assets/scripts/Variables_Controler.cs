@@ -45,14 +45,14 @@ public class Variables_Controler : MonoBehaviour
 
         currentPlayer.timee = 0f;
 
-        currentPlayer.Player_Name = mcontrol.GetNamee();
+        //currentPlayer.Player_Name = mcontrol.GetNamee();
     }
     // -----------
     void Update()
     {
 
         currentPlayer.timee += Time.deltaTime;
-        txt.text = currentPlayer.timee.ToString("n2");
+     //   txt.text = currentPlayer.timee.ToString("n2");
 
     }
     // -----------
@@ -99,13 +99,29 @@ public class Variables_Controler : MonoBehaviour
 
     void SAaave()
     {
+        Debug.Log("cant_Jugadores");
+        Debug.Log(num_current_Player);
         PlayerPrefs.SetInt("cant_Jugadores", num_current_Player);
-    //  PlayerPrefs.SetString("Jugador_" + num_current_Player.ToString(), name);
+        //  PlayerPrefs.SetString("Jugador_" + num_current_Player.ToString(), name);
 
+        Debug.Log("Jugador_" + num_current_Player.ToString() + "_Time______");
+        Debug.Log(currentPlayer.timee);
         PlayerPrefs.SetFloat("Jugador_" + num_current_Player.ToString() + "_Time", currentPlayer.timee);
+
+        Debug.Log("Jugador_" + num_current_Player.ToString() + "_Peaje______");
+        Debug.Log(currentPlayer.s_Peaje);
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Peaje", currentPlayer.s_Peaje);
+
+        Debug.Log("Jugador_" + num_current_Player.ToString() + "_Restaurante______");
+        Debug.Log(currentPlayer.s_Restaurant);
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Restaurante", currentPlayer.s_Restaurant);
+
+        Debug.Log("Jugador_" + num_current_Player.ToString() + "_Niebla______");
+        Debug.Log(currentPlayer.s_Niebla);
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Niebla", currentPlayer.s_Niebla);
+
+        Debug.Log("Jugador_" + num_current_Player.ToString() + "_Parking______");
+        Debug.Log(currentPlayer.s_Parking);
         PlayerPrefs.SetInt("Jugador_" + num_current_Player.ToString() + "_Parking", currentPlayer.s_Parking);
 
     }
